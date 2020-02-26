@@ -12,7 +12,7 @@ public class HuffmanCompression {
         String keyvalue;
         StringBuilder inputstring = new StringBuilder(inputarray.length);
         StringBuilder huffmanstring = new StringBuilder(inputarray.length);
-        HashMap<Character, String> h = new HashMap<>();
+        HashMap<Character, String> hashMap = new HashMap<>();
         System.out.println("Input String Binary : ");
         for (int i = 0; i < inputarray.length; i++) {
             if (inputarray[i] >= 'a' && inputarray[i] <= 'z') {
@@ -24,31 +24,40 @@ public class HuffmanCompression {
             }
         }
         int inputstringlength = inputstring.length();
-        h.put('a', "1010");
-        h.put('b', "100000");
-        h.put('c', "00000");
-        h.put('d', "10110");
-        h.put('e', "010");
-        h.put('f', "110011");
-        h.put('g', "100010");
-        h.put('h', "0001");
-        h.put('i', "0110");
-        h.put('j', "1100001011");
-        h.put('k', "11000011");
-        h.put('l', "10111");
-        h.put('m', "110010");
-        h.put('n', "0111");
-        h.put('o', "1001");
-        h.put('p', "100001");
-        h.put('q', "1100001001");
-        h.put('r', "0010");
-        h.put('s', "0011");
-        h.put('t', "1101");
-        h.put('u', "00001");
-        h.put('v', "1100000");
-        h.put('w', "110001");
-        h.put('x', "1100001000");
-        h.put('y', "100011");
-        h.put('z', "1100001010");
+        hashMap.put('a', "1010");
+        hashMap.put('b', "100000");
+        hashMap.put('c', "00000");
+        hashMap.put('d', "10110");
+        hashMap.put('e', "010");
+        hashMap.put('f', "110011");
+        hashMap.put('g', "100010");
+        hashMap.put('h', "0001");
+        hashMap.put('i', "0110");
+        hashMap.put('j', "1100001011");
+        hashMap.put('k', "11000011");
+        hashMap.put('l', "10111");
+        hashMap.put('m', "110010");
+        hashMap.put('n', "0111");
+        hashMap.put('o', "1001");
+        hashMap.put('p', "100001");
+        hashMap.put('q', "1100001001");
+        hashMap.put('r', "0010");
+        hashMap.put('s', "0011");
+        hashMap.put('t', "1101");
+        hashMap.put('u', "00001");
+        hashMap.put('v', "1100000");
+        hashMap.put('w', "110001");
+        hashMap.put('x', "1100001000");
+        hashMap.put('y', "100011");
+        hashMap.put('z', "1100001010");
+        System.out.println();
+        System.out.println("Huffman binary : ");
+        for (char c : inputarray) {
+            if (c >= 'a' && c <= 'z') {
+                keyvalue = hashMap.get(c);
+                System.out.print(keyvalue + " ");
+                huffmanstring.append(keyvalue);
+            }
+        }
     }
 }
