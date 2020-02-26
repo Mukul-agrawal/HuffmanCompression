@@ -23,5 +23,6 @@ public class HuffmanCompression {
                 inputstring.append(s);
             }
         }
+        int inputstringlength = inputstring.length();
     }
 }
