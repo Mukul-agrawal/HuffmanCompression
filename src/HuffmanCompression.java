@@ -61,5 +61,7 @@ public class HuffmanCompression {
         }
         int huffmanstringlength = huffmanstring.length();
         double ratio = (double) inputstringlength / huffmanstringlength;
+        System.out.println();
+        System.out.println("Compression ratio = " + ratio);
     }
 }
