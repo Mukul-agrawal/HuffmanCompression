@@ -24,5 +24,31 @@ public class HuffmanCompression {
             }
         }
         int inputstringlength = inputstring.length();
+        h.put('a', "1010");
+        h.put('b', "100000");
+        h.put('c', "00000");
+        h.put('d', "10110");
+        h.put('e', "010");
+        h.put('f', "110011");
+        h.put('g', "100010");
+        h.put('h', "0001");
+        h.put('i', "0110");
+        h.put('j', "1100001011");
+        h.put('k', "11000011");
+        h.put('l', "10111");
+        h.put('m', "110010");
+        h.put('n', "0111");
+        h.put('o', "1001");
+        h.put('p', "100001");
+        h.put('q', "1100001001");
+        h.put('r', "0010");
+        h.put('s', "0011");
+        h.put('t', "1101");
+        h.put('u', "00001");
+        h.put('v', "1100000");
+        h.put('w', "110001");
+        h.put('x', "1100001000");
+        h.put('y', "100011");
+        h.put('z', "1100001010");
     }
 }
