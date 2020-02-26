@@ -8,6 +8,7 @@ public class HuffmanCompression {
         input = input.toLowerCase();
         char[] inputarray = input.toCharArray();
         String temporary;
+        String keyvalue;
 
     }
 }
