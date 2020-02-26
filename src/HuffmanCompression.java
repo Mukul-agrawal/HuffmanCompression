@@ -6,6 +6,7 @@ public class HuffmanCompression {
         System.out.println("Enter any text : ");
         String input = scanner.nextLine();
         input = input.toLowerCase();
+        char[] inputarray = input.toCharArray();
 
     }
 }
