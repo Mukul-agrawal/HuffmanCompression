@@ -60,5 +60,6 @@ public class HuffmanCompression {
             }
         }
         int huffmanstringlength = huffmanstring.length();
+        double ratio = (double) inputstringlength / huffmanstringlength;
     }
 }
